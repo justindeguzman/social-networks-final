@@ -49,6 +49,7 @@ class Application extends \yii\web\Application
      */
     public function preInit(&$config)
     {
+        date_default_timezone_set('America/New_York');
         if (!isset($config['timeZone']) && date_default_timezone_get()) {
             $config['timeZone'] = date_default_timezone_get();
         }

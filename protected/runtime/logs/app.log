@@ -3244,3 +3244,508 @@ Stack trace:
     'argv' => []
     'argc' => 0
 ]
+2015-11-08 22:19:51 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The directory does not exist: /Library/WebServer/Documents/social-networks-final/assets' in /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/AssetManager.php:211
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Object.php(107): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/di/Container.php(366): ReflectionClass->newInstanceArgs(Array)
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(600): yii\di\ServiceLocator->get('assetManager')
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(223): yii\base\Application->getAssetManager()
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(283): yii\web\View->getAssetManager()
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/AssetBundle.php(119): yii\web\View->registerAssetBundle('yii\\widgets\\Act...')
+#10 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/widgets/ActiveForm.php(200): yii\web\AssetBundle::register(Object(humhub\components\View))
+#11 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(73): yii\widgets\ActiveForm->run()
+#12 /Library/WebServer/Documents/social-networks-final/protected/humhub/widgets/views/languageChooser.php(10): yii\base\Widget::end()
+#13 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#14 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#15 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(humhub\widgets\LanguageChooser))
+#16 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(191): yii\base\View->render('languageChooser', Array, Object(humhub\widgets\LanguageChooser))
+#17 /Library/WebServer/Documents/social-networks-final/protected/humhub/widgets/LanguageChooser.php(41): yii\base\Widget->render('languageChooser', Array)
+#18 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(98): humhub\widgets\LanguageChooser->run()
+#19 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/installer/views/index/index.php(25): yii\base\Widget::widget()
+#20 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#21 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#22 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(humhub\modules\installer\controllers\IndexController))
+#23 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('index', Array, Object(humhub\modules\installer\controllers\IndexController))
+#24 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/installer/controllers/IndexController.php(42): yii\base\Controller->render('index', Array)
+#25 [internal function]: humhub\modules\installer\controllers\IndexController->actionIndex()
+#26 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#27 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#28 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#29 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('installer/index', Array)
+#30 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#31 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#32 {main}
+2015-11-08 22:19:51 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/index'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.29'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '57466'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=installer%2Findex'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=installer%2Findex'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1447021191.077
+    'REQUEST_TIME' => 1447021191
+    'argv' => [
+        0 => 'r=installer%2Findex'
+    ]
+    'argc' => 1
+]
+2015-11-08 22:19:51 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\log\DbTarget: Exception (Database Exception) 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' 
+
+in /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Connection.php:534
+
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Schema.php(477): yii\db\Connection->getSlavePdo()
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Connection.php(732): yii\db\Schema->quoteValue('yii\\base\\Invali...')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Command.php(172): yii\db\Connection->quoteValue('yii\\base\\Invali...')
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Command.php(767): yii\db\Command->getRawSql()
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/log/DbTarget.php(83): yii\db\Command->execute()
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/log/Target.php(111): yii\log\DbTarget->export()
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\log\Target->collect(Array, true)
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#10 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidConfigException))
+#12 {main}
+2015-11-08 22:19:51 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/index'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.29'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '57466'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=installer%2Findex'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=installer%2Findex'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1447021191.077
+    'REQUEST_TIME' => 1447021191
+    'argv' => [
+        0 => 'r=installer%2Findex'
+    ]
+    'argc' => 1
+]
+2015-11-08 22:19:57 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The directory does not exist: /Library/WebServer/Documents/social-networks-final/assets' in /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/AssetManager.php:211
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Object.php(107): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/di/Container.php(366): ReflectionClass->newInstanceArgs(Array)
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(600): yii\di\ServiceLocator->get('assetManager')
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(223): yii\base\Application->getAssetManager()
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(283): yii\web\View->getAssetManager()
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/AssetBundle.php(119): yii\web\View->registerAssetBundle('yii\\widgets\\Act...')
+#10 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/widgets/ActiveForm.php(200): yii\web\AssetBundle::register(Object(humhub\components\View))
+#11 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(73): yii\widgets\ActiveForm->run()
+#12 /Library/WebServer/Documents/social-networks-final/protected/humhub/widgets/views/languageChooser.php(10): yii\base\Widget::end()
+#13 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#14 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#15 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(humhub\widgets\LanguageChooser))
+#16 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(191): yii\base\View->render('languageChooser', Array, Object(humhub\widgets\LanguageChooser))
+#17 /Library/WebServer/Documents/social-networks-final/protected/humhub/widgets/LanguageChooser.php(41): yii\base\Widget->render('languageChooser', Array)
+#18 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(98): humhub\widgets\LanguageChooser->run()
+#19 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/installer/views/index/index.php(25): yii\base\Widget::widget()
+#20 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#21 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#22 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(humhub\modules\installer\controllers\IndexController))
+#23 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('index', Array, Object(humhub\modules\installer\controllers\IndexController))
+#24 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/installer/controllers/IndexController.php(42): yii\base\Controller->render('index', Array)
+#25 [internal function]: humhub\modules\installer\controllers\IndexController->actionIndex()
+#26 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#27 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#28 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#29 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('installer/index', Array)
+#30 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#31 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#32 {main}
+2015-11-08 22:19:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e07a67c8bb5513ffd8203343cc50ff4d5a4edd79bf9e0499b85768e476e0664aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"G9YKRYamvUTC6g0-ANUHHTG3B8D92eUP\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=e07a67c8bb5513ffd8203343cc50ff4d5a4edd79bf9e0499b85768e476e0664aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22G9YKRYamvUTC6g0-ANUHHTG3B8D92eUP%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.29'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '57551'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=installer%2Findex'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=installer%2Findex'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1447021197.793
+    'REQUEST_TIME' => 1447021197
+    'argv' => [
+        0 => 'r=installer%2Findex'
+    ]
+    'argc' => 1
+]
+2015-11-08 22:19:57 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\log\DbTarget: Exception (Database Exception) 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' 
+
+in /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Connection.php:534
+
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Schema.php(477): yii\db\Connection->getSlavePdo()
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Connection.php(732): yii\db\Schema->quoteValue('yii\\base\\Invali...')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Command.php(172): yii\db\Connection->quoteValue('yii\\base\\Invali...')
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Command.php(767): yii\db\Command->getRawSql()
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/log/DbTarget.php(83): yii\db\Command->execute()
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/log/Target.php(111): yii\log\DbTarget->export()
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\log\Target->collect(Array, true)
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#10 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidConfigException))
+#12 {main}
+2015-11-08 22:19:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e07a67c8bb5513ffd8203343cc50ff4d5a4edd79bf9e0499b85768e476e0664aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"G9YKRYamvUTC6g0-ANUHHTG3B8D92eUP\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=e07a67c8bb5513ffd8203343cc50ff4d5a4edd79bf9e0499b85768e476e0664aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22G9YKRYamvUTC6g0-ANUHHTG3B8D92eUP%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.29'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '57551'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=installer%2Findex'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=installer%2Findex'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1447021197.793
+    'REQUEST_TIME' => 1447021197
+    'argv' => [
+        0 => 'r=installer%2Findex'
+    ]
+    'argc' => 1
+]
+2015-11-08 22:20:31 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The directory is not writable by the Web process: /Library/WebServer/Documents/social-networks-final/assets' in /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/AssetManager.php:213
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Object.php(107): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/di/Container.php(366): ReflectionClass->newInstanceArgs(Array)
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(600): yii\di\ServiceLocator->get('assetManager')
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(223): yii\base\Application->getAssetManager()
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(283): yii\web\View->getAssetManager()
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/AssetBundle.php(119): yii\web\View->registerAssetBundle('yii\\widgets\\Act...')
+#10 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/widgets/ActiveForm.php(200): yii\web\AssetBundle::register(Object(humhub\components\View))
+#11 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(73): yii\widgets\ActiveForm->run()
+#12 /Library/WebServer/Documents/social-networks-final/protected/humhub/widgets/views/languageChooser.php(10): yii\base\Widget::end()
+#13 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#14 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#15 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(humhub\widgets\LanguageChooser))
+#16 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(191): yii\base\View->render('languageChooser', Array, Object(humhub\widgets\LanguageChooser))
+#17 /Library/WebServer/Documents/social-networks-final/protected/humhub/widgets/LanguageChooser.php(41): yii\base\Widget->render('languageChooser', Array)
+#18 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(98): humhub\widgets\LanguageChooser->run()
+#19 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/installer/views/index/index.php(25): yii\base\Widget::widget()
+#20 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#21 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#22 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(humhub\modules\installer\controllers\IndexController))
+#23 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('index', Array, Object(humhub\modules\installer\controllers\IndexController))
+#24 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/installer/controllers/IndexController.php(42): yii\base\Controller->render('index', Array)
+#25 [internal function]: humhub\modules\installer\controllers\IndexController->actionIndex()
+#26 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#27 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#28 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#29 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('installer/index', Array)
+#30 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#31 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#32 {main}
+2015-11-08 22:20:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e07a67c8bb5513ffd8203343cc50ff4d5a4edd79bf9e0499b85768e476e0664aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"G9YKRYamvUTC6g0-ANUHHTG3B8D92eUP\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=e07a67c8bb5513ffd8203343cc50ff4d5a4edd79bf9e0499b85768e476e0664aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22G9YKRYamvUTC6g0-ANUHHTG3B8D92eUP%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.29'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '57941'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=installer%2Findex'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=installer%2Findex'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1447021231.288
+    'REQUEST_TIME' => 1447021231
+    'argv' => [
+        0 => 'r=installer%2Findex'
+    ]
+    'argc' => 1
+]
+2015-11-08 22:20:31 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\log\DbTarget: Exception (Database Exception) 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' 
+
+in /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Connection.php:534
+
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Schema.php(477): yii\db\Connection->getSlavePdo()
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Connection.php(732): yii\db\Schema->quoteValue('yii\\base\\Invali...')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Command.php(172): yii\db\Connection->quoteValue('yii\\base\\Invali...')
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/db/Command.php(767): yii\db\Command->getRawSql()
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/log/DbTarget.php(83): yii\db\Command->execute()
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/log/Target.php(111): yii\log\DbTarget->export()
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\log\Target->collect(Array, true)
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#10 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidConfigException))
+#12 {main}
+2015-11-08 22:20:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'installer/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e07a67c8bb5513ffd8203343cc50ff4d5a4edd79bf9e0499b85768e476e0664aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"G9YKRYamvUTC6g0-ANUHHTG3B8D92eUP\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=e07a67c8bb5513ffd8203343cc50ff4d5a4edd79bf9e0499b85768e476e0664aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22G9YKRYamvUTC6g0-ANUHHTG3B8D92eUP%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.29'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '57941'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=installer%2Findex'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=installer%2Findex'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1447021231.288
+    'REQUEST_TIME' => 1447021231
+    'argv' => [
+        0 => 'r=installer%2Findex'
+    ]
+    'argc' => 1
+]
+2015-11-08 18:13:43 [::1][1][qqhsi3vhcrs5p3thgu9fuj7o26][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'imagejpeg(/Library/WebServer/Documents/social-networks-final/uploads/profile_image/c3cef279-00c2-48f5-a033-97574d166a18_org.jpg): failed to open stream: Permission denied' in /Library/WebServer/Documents/social-networks-final/protected/humhub/libs/ImageConverter.php:51
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'imagejpeg(/Libr...', '/Library/WebSer...', 51, Array)
+#1 /Library/WebServer/Documents/social-networks-final/protected/humhub/libs/ImageConverter.php(51): imagejpeg(Resource id #404, '/Library/WebSer...', 100)
+#2 /Library/WebServer/Documents/social-networks-final/protected/humhub/libs/ProfileImage.php(173): humhub\libs\ImageConverter::TransformToJpeg('/Library/WebSer...', '/Library/WebSer...')
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/installer/controllers/ConfigController.php(219): humhub\libs\ProfileImage->setNew('/Library/WebSer...')
+#4 [internal function]: humhub\modules\installer\controllers\ConfigController->actionAdmin()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('admin', Array)
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('installer/confi...', Array)
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#10 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#11 {main}
+2015-11-08 18:13:42 [::1][1][qqhsi3vhcrs5p3thgu9fuj7o26][info][application] $_GET = [
+    'r' => 'installer/config/admin'
+]
+
+$_POST = [
+    '_csrf' => 'M1pqcWtaNU5xHScZIzd5GUA3IQdSPV8YRzgmJz82XylCNA0pXBd9Lw=='
+    'User' => [
+        'username' => 'usrfrndly'
+        'email' => 'jmh794@nyu.edu'
+    ]
+    'Password' => [
+        'newPassword' => 'Nsyncrox1!'
+        'newPasswordConfirm' => 'Nsyncrox1!'
+    ]
+    'Profile' => [
+        'firstname' => 'Jaclyn'
+        'lastname' => 'Horowitz'
+    ]
+    'save' => ''
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '280'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=installer%2Fconfig%2Fadmin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.29'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '51020'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=installer%2Fconfig%2Fadmin'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=installer%2Fconfig%2Fadmin'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1447024422.851
+    'REQUEST_TIME' => 1447024422
+]
