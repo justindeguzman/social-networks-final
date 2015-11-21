@@ -125,6 +125,49 @@ class Membership extends \yii\db\ActiveRecord
         return $count;
     }
 
+
+
+
+    /*
+     *
+     * Select  MAX(cnt),user_id from
+        (select user_id, COUNT(user_id) cnt
+        from space_membership group
+        by user_id a
+        ) AS T;
+
+     */
+
+    public static function GetUserInMostSpaces()
+    {
+
+
+        $cacheId = "MostSpaces";
+
+        $mostspaces = Yii::$app->cache->get($cacheId);
+
+
+
+        if ($mostspaces === false) {
+
+
+            $mostspaces= Yii::$app->db
+                ->createCommand("Select  MAX(cnt),user_id,username from
+(select user_id , COUNT(user_id) cnt, username
+from user, space_membership where space_membership.user_id=user.id group
+by space_membership.user_id
+) AS T")->queryAll();
+
+            $userspaces = array();
+
+            foreach ($mostspaces as $ms) {
+                $userspaces[] = $ms['username'];
+            }
+            Yii::$app->cache->set($cacheId, $userspaces);
+        }
+        return $userspaces;
+    }
+
     /**
      * Returns a list of all spaces of the given userId
      *
@@ -155,5 +198,6 @@ class Membership extends \yii\db\ActiveRecord
         }
         return $spaces;
     }
+
 
 }

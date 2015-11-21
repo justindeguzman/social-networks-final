@@ -2,8 +2,10 @@
 
 namespace humhub\modules\directory\widgets;
 
+use humhub\modules\space\models\Membership;
 use humhub\modules\user\models\User;
 use humhub\modules\user\models\Follow;
+use yii\base\Widget;
 
 /**
  * Shows some membership statistics in the directory - members sidebar.
@@ -12,7 +14,7 @@ use humhub\modules\user\models\Follow;
  * @since 0.5
  * @author Luke
  */
-class MemberStatistics extends \yii\base\Widget
+class MemberStatistics extends Widget
 {
 
     /**
@@ -26,12 +28,14 @@ class MemberStatistics extends \yii\base\Widget
 
         $statsUserOnline = \humhub\modules\user\components\Session::getOnlineUsers()->count();
         $statsUserFollow = Follow::find()->where(['object_model' => User::className()])->count();
+        $statsUserInMostSpaces = Membership::GetUserInMostSpaces();
 
         // Render widgets view
         return $this->render('memberStats', array(
                     'statsTotalUsers' => $statsTotalUsers,
                     'statsUserOnline' => $statsUserOnline,
-                    'statsUserFollow' => $statsUserFollow
+                    'statsUserFollow' => $statsUserFollow,
+                    'statsUserInMostSpaces' =>$statsUserInMostSpaces
         ));
     }
 
