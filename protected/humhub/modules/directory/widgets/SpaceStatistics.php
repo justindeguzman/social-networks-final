@@ -21,13 +21,15 @@ class SpaceStatistics extends \yii\base\Widget
     {
         $statsCountSpaces = Space::find()->count();
         $statsCountSpacesHidden = Space::find()->where(['visibility' => Space::VISIBILITY_NONE])->count();
-        $statsSpaceMostMembers = Space::find()->where('id = (SELECT space_id  FROM space_membership GROUP BY space_id ORDER BY count(*) DESC LIMIT 1)')->one();
+        $statsSpaceMostMembers = Space::find()->where('id = (SELECT space_id  FROM space_membership WHERE space_id != 1 GROUP BY space_id ORDER BY count(*) DESC LIMIT 1)')->one();
+        $statsNodeRankings = Space::getSpaceNodeRanking();
 
         // Render widgets view
         return $this->render('spaceStats', array(
             'statsSpaceMostMembers' => $statsSpaceMostMembers,
             'statsCountSpaces' => $statsCountSpaces,
             'statsCountSpacesHidden' => $statsCountSpacesHidden,
+            'statsNodeRankings' => $statsNodeRankings
         ));
     }
 

@@ -35,9 +35,9 @@ use humhub\models\Setting;
 
         <hr>
 
-        <div style="text-align: center;">
-            <strong><?php echo Yii::t('DirectoryModule.widgets_views_memberStats', 'Follows somebody'); ?>:</strong> <?php echo $statsUserFollow; ?>
-        </div>
+<!--        <div style="text-align: center;">-->
+<!--            <strong>--><?php //echo Yii::t('DirectoryModule.widgets_views_memberStats', 'Follows somebody'); ?><!--:</strong> --><?php //echo $statsUserFollow; ?>
+<!--        </div>-->
         <div style="text-align: center;">
             <strong><?php echo Yii::t('DirectoryModule.widgets_views_memberStats', 'Member part of most spaces'); ?>:</strong> <?php foreach( $statsUserInMostSpaces as $m){ echo $m;}  ?>
         </div>

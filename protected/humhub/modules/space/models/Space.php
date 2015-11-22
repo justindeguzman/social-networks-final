@@ -218,14 +218,14 @@ class Space extends ContentContainerActiveRecord implements \humhub\modules\sear
         // No one can join
         if ($this->join_policy == self::JOIN_POLICY_NONE)
             return
-                    false;
+                false;
 
         return true;
     }
 
     /**
      * Indicates that this user can join this workspace w
-      ithout permission
+     * ithout permission
      *
      * @param $userId User Id of User
      */
@@ -248,7 +248,7 @@ class Space extends ContentContainerActiveRecord implements \humhub\modules\sear
 
     /**
      * Check if current user can wri
-      te to this workspace
+     * te to this workspace
      *
      * @param type $userId
      * @return type
@@ -274,7 +274,7 @@ class Space extends ContentContainerActiveRecord implements \humhub\modules\sear
 
     /**
      * Checks if given use
-      r can invite people to this workspace
+     * r can invite people to this workspace
      *
      * @param type $userId
      * @return type
@@ -450,6 +450,30 @@ class Space extends ContentContainerActiveRecord implements \humhub\modules\sear
         $query = $this->hasMany(Membership::className(), ['space_id' => 'id']);
         $query->andWhere(['space_membership.status' => Membership::STATUS_APPLICANT]);
         return $query;
+    }
+
+    public static function getSpaceNodeRanking()
+    {
+        $cacheId = "MostSpaces";
+
+        $nodeRanking = Yii::$app->cache->get($cacheId);
+
+
+
+        if ($nodeRanking === false) {
+
+
+            $nodeRanking= Yii::$app->db
+                ->createCommand("Select name from (select space.name name, uptime from space, node where space.id = node.space_id order by uptime DESC) t")->queryAll();
+
+            $nodes = array();
+
+            foreach ($nodeRanking as $n) {
+                $nodes[] = $n['name'];
+            }
+            Yii::$app->cache->set($cacheId, $nodes);
+        }
+        return $nodes;
     }
 
 }

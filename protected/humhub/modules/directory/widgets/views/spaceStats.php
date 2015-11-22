@@ -13,6 +13,14 @@ use humhub\models\Setting;
     </div>
 
     <div class="panel-body">
+        <?php if (isset($statsSpaceMostMembers->name)) { ?>
+            <div style="text-align: center;">
+                <strong><?php echo Yii::t('DirectoryModule.widgets_views_spaceStats', 'Space with most members'); ?>:
+                </strong> <?php echo Html::encode($statsSpaceMostMembers->name); ?>
+            </div>
+        <?php } ?>
+
+        <hr>
         <div class="knob-container" style="text-align: center; opacity: 0;">
             <strong><?php echo Yii::t('DirectoryModule.widgets_views_spaceStats', 'Total spaces'); ?></strong><br><br>
 
@@ -37,12 +45,32 @@ use humhub\models\Setting;
         </div>
         <hr>
 
-        <?php if (isset($statsSpaceMostMembers->name)) { ?>
+
             <div style="text-align: center;">
-                <strong><?php echo Yii::t('DirectoryModule.widgets_views_spaceStats', 'Most members'); ?>:
-                </strong> <?php echo Html::encode($statsSpaceMostMembers->name); ?>
+                <strong><?php echo Yii::t('DirectoryModule.widgets_views_spaceStats', 'Node Uptime Rankings (excludes nodes with unretrievable data)'); ?>
+                </strong>
+                <?php $cnt= 1 ?>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th style="font-size:13px;text-align: center;" >Rank</th>
+                        <th style="font-size:13px;text-align: center;">Node</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                <?php foreach( $statsNodeRankings as $n){ ?>
+                    <tr>
+                        <td><?php echo $cnt; ?></td>
+                        <td><?php echo $n; ?></td>
+                    </tr>
+                    <?php $cnt= 1+$cnt ?>
+
+                <?php }  ?>
+                    </tbody>
+                </table>
+
             </div>
-        <?php } ?>
     </div>
 </div>
 

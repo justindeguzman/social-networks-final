@@ -6939,3 +6939,245 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1448065634.272
     'REQUEST_TIME' => 1448065634
 ]
+2015-11-22 02:16:43 [::1][1][ukobn0fit871u31gcvd50ctrv2][error][yii\base\ErrorException:8192] exception 'yii\base\ErrorException' with message 'Non-static method humhub\modules\space\models\Space::getSpaceNodeRanking() should not be called statically, assuming $this from incompatible context' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/directory/widgets/SpaceStatistics.php:25
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/humhub/widgets/BaseStack.php(92): yii\base\Widget::widget()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(98): humhub\widgets\BaseStack->run()
+#2 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/directory/views/directory/_layout.php(72): yii\base\Widget::widget()
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#6 /Library/WebServer/Documents/social-networks-final/protected/humhub/views/layouts/main.php(118): yii\base\View->render()
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile()
+#10 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent()
+#11 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/directory/controllers/DirectoryController.php(131): yii\base\Controller->render()
+#12 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\directory\controllers\DirectoryController->actionSpaces()
+#13 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#14 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#15 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#16 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#17 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#18 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#19 {main}
+2015-11-22 02:16:43 [::1][1][ukobn0fit871u31gcvd50ctrv2][info][application] $_GET = [
+    'r' => 'directory/directory/spaces'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    '_csrf' => '901bec7b607e15761f863a72f75daa672456af647a9a1c9ceae4255cfa85018ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FIP3SWgLfcOKV8ijGrgw-hd4EtGjRDac\";}'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ukobn0fit871u31gcvd50ctrv2'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=directory%2Fdirectory%2Fspaces'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-people-panel=expanded; pm_new-spaces-panel=expanded; pm_user-statistics-panel=expanded; _csrf=901bec7b607e15761f863a72f75daa672456af647a9a1c9ceae4255cfa85018ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FIP3SWgLfcOKV8ijGrgw-hd4EtGjRDac%22%3B%7D; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ukobn0fit871u31gcvd50ctrv2; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.6.15'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '51472'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=directory%2Fdirectory%2Fspaces'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=directory%2Fdirectory%2Fspaces'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1448176603.432
+    'REQUEST_TIME' => 1448176603
+]
+2015-11-22 02:31:17 [::1][1][ukobn0fit871u31gcvd50ctrv2][error][yii\base\ErrorException:8192] exception 'yii\base\ErrorException' with message 'Non-static method humhub\modules\space\models\Space::getSpaceNodeRanking() should not be called statically, assuming $this from incompatible context' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/directory/widgets/SpaceStatistics.php:25
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/humhub/widgets/BaseStack.php(92): yii\base\Widget::widget()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(98): humhub\widgets\BaseStack->run()
+#2 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/directory/views/directory/_layout.php(72): yii\base\Widget::widget()
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#6 /Library/WebServer/Documents/social-networks-final/protected/humhub/views/layouts/main.php(118): yii\base\View->render()
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile()
+#10 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent()
+#11 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/directory/controllers/DirectoryController.php(131): yii\base\Controller->render()
+#12 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\directory\controllers\DirectoryController->actionSpaces()
+#13 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#14 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#15 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#16 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#17 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#18 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#19 {main}
+2015-11-22 02:31:17 [::1][1][ukobn0fit871u31gcvd50ctrv2][info][application] $_GET = [
+    'r' => 'directory/directory/spaces'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    '_csrf' => '901bec7b607e15761f863a72f75daa672456af647a9a1c9ceae4255cfa85018ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FIP3SWgLfcOKV8ijGrgw-hd4EtGjRDac\";}'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ukobn0fit871u31gcvd50ctrv2'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-people-panel=expanded; pm_new-spaces-panel=expanded; pm_user-statistics-panel=expanded; _csrf=901bec7b607e15761f863a72f75daa672456af647a9a1c9ceae4255cfa85018ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FIP3SWgLfcOKV8ijGrgw-hd4EtGjRDac%22%3B%7D; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ukobn0fit871u31gcvd50ctrv2; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.6.15'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '62110'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=directory%2Fdirectory%2Fspaces'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=directory%2Fdirectory%2Fspaces'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1448177477.27
+    'REQUEST_TIME' => 1448177477
+]
+2015-11-22 02:33:10 [::1][1][ukobn0fit871u31gcvd50ctrv2][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: statsNodeRankings' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/directory/widgets/views/spaceStats.php:57
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(191): yii\base\View->render()
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/directory/widgets/SpaceStatistics.php(33): yii\base\Widget->render()
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(98): humhub\modules\directory\widgets\SpaceStatistics->run()
+#5 /Library/WebServer/Documents/social-networks-final/protected/humhub/widgets/BaseStack.php(92): yii\base\Widget::widget()
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(98): humhub\widgets\BaseStack->run()
+#7 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/directory/views/directory/_layout.php(72): yii\base\Widget::widget()
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#10 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#11 /Library/WebServer/Documents/social-networks-final/protected/humhub/views/layouts/main.php(118): yii\base\View->render()
+#12 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#13 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#14 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile()
+#15 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent()
+#16 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/directory/controllers/DirectoryController.php(131): yii\base\Controller->render()
+#17 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\directory\controllers\DirectoryController->actionSpaces()
+#18 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#19 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#20 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#21 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#22 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#23 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#24 {main}
+2015-11-22 02:33:10 [::1][1][ukobn0fit871u31gcvd50ctrv2][info][application] $_GET = [
+    'r' => 'directory/directory/spaces'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    '_csrf' => '901bec7b607e15761f863a72f75daa672456af647a9a1c9ceae4255cfa85018ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FIP3SWgLfcOKV8ijGrgw-hd4EtGjRDac\";}'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ukobn0fit871u31gcvd50ctrv2'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-people-panel=expanded; pm_new-spaces-panel=expanded; pm_user-statistics-panel=expanded; _csrf=901bec7b607e15761f863a72f75daa672456af647a9a1c9ceae4255cfa85018ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FIP3SWgLfcOKV8ijGrgw-hd4EtGjRDac%22%3B%7D; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ukobn0fit871u31gcvd50ctrv2; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.6.15'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '63510'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=directory%2Fdirectory%2Fspaces'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=directory%2Fdirectory%2Fspaces'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1448177590.48
+    'REQUEST_TIME' => 1448177590
+]
