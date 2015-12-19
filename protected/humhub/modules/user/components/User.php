@@ -19,6 +19,7 @@ class User extends \yii\web\User
     public function isAdmin()
     {
         if ($this->isGuest)
+
             return false;
 
         return ($this->getIdentity()->super_admin == 1);

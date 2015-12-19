@@ -48,6 +48,14 @@ class ProfileMenu extends \humhub\widgets\BaseMenu
             'sortOrder' => 300,
             'isActive' => (Yii::$app->controller->id == "profile" && Yii::$app->controller->action->id == "about"),
         ));
+
+        $this->addItem(array(
+            'label' => Yii::t('UserModule.widgets_ProfileMenuWidget', 'Reputation'),
+            'group' => 'profile',
+            'url' => $this->user->createUrl('//user/profile/reputation'),
+            'sortOrder' => 400,
+            'isActive' => (Yii::$app->controller->id == "profile" && Yii::$app->controller->action->id == "reputation"),
+        ));
         //}
 
         parent::init();
