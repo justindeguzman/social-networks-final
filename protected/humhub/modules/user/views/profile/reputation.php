@@ -1,10 +1,8 @@
 <?php
 
 use yii\bootstrap\Html;
-
 include 'ChromePhp.php';
 require_once('FirePHPCore/FirePHP.class.php');
-
 
 $firstClass = "active";
 $fire_php = FirePHP::getInstance(true);
@@ -28,9 +26,24 @@ endforeach;
     <div
         class="panel-heading"><?php echo Yii::t('UserModule.views_profile_reputation', '<strong>Reputation</strong> of this user'); ?></div>
 
+
     <div class="panel-body">
 
         <?php $firstClass = "active"; ?>
+
+
+        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                <li class="<?php echo $firstClass;
+                $firstClass = "";
+                ?>"><a href="#profile-category-<?php echo $category->id; ?>"
+                       data-toggle="tab"><?php echo Html::encode(Yii::t($category->getTranslationCategory(), $category->title)); ?></a>
+                </li>
+                <?php             ChromePhp::log($user->profile);
+            endforeach; ?>
+        </ul>
+
+        <div class="panel_heading">Total Reputations Points <?php echo $sum[0]['sum(point_value)'] ?>
+        </div>
 
 <div class="panel_heading">Reputations table</div>
 

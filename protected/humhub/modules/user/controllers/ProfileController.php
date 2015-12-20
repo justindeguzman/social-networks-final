@@ -10,9 +10,10 @@ namespace humhub\modules\user\controllers;
 
 use humhub\modules\content\components\ContentContainerController;
 use humhub\modules\content\components\ContentAddonActiveRecord;
-
+use humhub\modules\user\models;
 use Yii;
 use yii\db\Query;
+use humhub\modules\user\models\ReputationHistory;
 
 /**
  * ProfileController is responsible for all user profiles.
@@ -78,10 +79,8 @@ class ProfileController extends ContentContainerController
 
         $query2->select('id, user_id, rep_id, timestamp')->from('`reputation_history`')->where('user_id = ' . $this->getUser()->getId());
             $myrep = $query2->all();
-
-
-
-        return $this->render('reputation', ['user' => $this->contentContainer->attributes, 'rep' => $fullrep, 'myrep' => $myrep]);
+        $sum =  ReputationHistory::getReputationHistorySum($this->contentContainer->getId());
+        return $this->render('reputation', ['user' => $this->contentContainer->attributes, 'rep' => $fullrep, 'myrep' => $myrep, 'sum' => $sum]);
     }
 
 

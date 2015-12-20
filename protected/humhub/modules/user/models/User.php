@@ -13,7 +13,6 @@ use yii\base\Exception;
 use humhub\modules\content\components\ContentContainerActiveRecord;
 use humhub\modules\user\models\GroupAdmin;
 use humhub\modules\user\components\ActiveQueryUser;
-
 /**
  * This is the model class for table "user".
  *
@@ -564,6 +563,7 @@ class User extends ContentContainerActiveRecord implements \yii\web\IdentityInte
 
         return false;
     }
+
 
 
 
