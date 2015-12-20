@@ -12,7 +12,6 @@ use Yii;
 use yii\base\Exception;
 use humhub\components\ActiveRecord;
 use humhub\modules\content\components\ContentActiveRecord;
-use humhub\modules\content\components\ContentAddonActiveRecord;
 
 /**
  * HActiveRecordContentAddon is the base active record for content addons.

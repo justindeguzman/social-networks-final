@@ -1,30 +1,71 @@
 <?php
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
+
+include 'ChromePhp.php';
+require_once('FirePHPCore/FirePHP.class.php');
+
+
+$firstClass = "active";
+$fire_php = FirePHP::getInstance(true);
+ob_start();
+
+//$fire_php->info($this);
+$fire_php->group(array("this" => "is", "group" => "output"));
+
+
+$fire_php->table("table",$user);
+$fire_php->groupEnd();
+$thumbs_icon = yii\bootstrap\Html::icon("thumbs-up");
+
+$justMyRepIdVal= array();
+foreach($val as $myrep){
+    $justMyRepIdVal[] = $val['rep_id'];
+}
+
 ?>
-<div class="panel panel-default">
-    <div class="panel-heading"><?php echo Yii::t('UserModule.views_profile_reputation', '<strong>Reputation</strong> of this user'); ?></div>
-
-    <div class="panel-body">
-
-        <?php $firstClass = "active"; ?>
 
 
-∏            <?php foreach ($user->profile->getProfileFieldCategories() as $category): ?>
-                <li class="<?php echo $firstClass;
-                $firstClass = ""; ?>"><a href="#profile-category-<?php echo $category->id; ?>"
-                                         data-toggle="tab"><?php echo Html::encode(Yii::t($category->getTranslationCategory(), $category->title)); ?></a>
-                </li>
-            <?php endforeach; ?>
-        </ul>
-        <?php $firstClass = "active"; ?>
+<table class="table table-bordered">
+    <thead>Reputations table</thead>
+    <tr>
+        <th> # </th>
+        <th> Completed </th>
+        <th> Description </th>
+        <th> Point value </th>
+    </tr>
 
-        <table class="table table-bordered">
-            <?php Console.log( $user->profile->getUser()->getId()) ?>
 
-            <?php echo $user->profile->getUser()->getId() ?>
+    <?php foreach ($rep as $r): ?>
+
+
+    <tr>
+
+
+             <?php if( in_array($r['id'],$justMyRepIdVal) ){ ?>
+
+
+                <td><?php echo $thumbs_icon ?>
+           </td>
+        <?php } else { ?>
+        <td></td>
+       <?php } ?>
+
+            <td><?php echo  $r['id']  ?> </td>
+        <td><?php echo  $r['name']  ?> </td>
+        <td><?php echo  $r['point_value']  ?> </td>
+        <td><?php echo  $r['is_badge']  ?> </td>
+
+
+
+    </tr>
+    <?php endforeach; ?>
+
+    <?php ChromePhp::log($user); ?>
+    <?php ChromePhp::log($rep); ?>
+    <?php ChromePhp::log($myrep); ?>
 
 </table>
-        </div>
-    </div>
-</div>
+
+
+

@@ -56,6 +56,7 @@ class ProfileMenu extends \humhub\widgets\BaseMenu
             'sortOrder' => 400,
             'isActive' => (Yii::$app->controller->id == "profile" && Yii::$app->controller->action->id == "reputation"),
         ));
+
         //}
 
         parent::init();
