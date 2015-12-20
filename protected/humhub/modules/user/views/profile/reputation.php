@@ -19,15 +19,24 @@ $fire_php->groupEnd();
 $thumbs_icon = yii\bootstrap\Html::icon("thumbs-up");
 
 $justMyRepIdVal= array();
-foreach($val as $myrep){
+foreach( $myrep as $val):
     $justMyRepIdVal[] = $val['rep_id'];
-}
 
+endforeach;
 ?>
+<div class="panel panel-default">
+    <div
+        class="panel-heading"><?php echo Yii::t('UserModule.views_profile_reputation', '<strong>Reputation</strong> of this user'); ?></div>
+
+    <div class="panel-body">
+
+        <?php $firstClass = "active"; ?>
+
+<div class="panel_heading">Reputations table</div>
 
 
-<table class="table table-bordered">
-    <thead>Reputations table</thead>
+<table class="table table-bordered panel-body">
+
     <tr>
         <th> # </th>
         <th> Completed </th>
@@ -42,30 +51,34 @@ foreach($val as $myrep){
     <tr>
 
 
-             <?php if( in_array($r['id'],$justMyRepIdVal) ){ ?>
 
 
-                <td><?php echo $thumbs_icon ?>
-           </td>
+            <td style=" text-align: center;padding: 8px"><?php echo  $r['id']  ?> </td>
+        <?php if( in_array($r['id'],$justMyRepIdVal) ){ ?>
+
+
+            <td style="padding: 8px;text-align: center;" ><?php echo $thumbs_icon ?>
+            </td>
         <?php } else { ?>
-        <td></td>
-       <?php } ?>
-
-            <td><?php echo  $r['id']  ?> </td>
-        <td><?php echo  $r['name']  ?> </td>
-        <td><?php echo  $r['point_value']  ?> </td>
-        <td><?php echo  $r['is_badge']  ?> </td>
+            <td style="padding: 8px; text-align: center;"></td>
+        <?php } ?>
+        <td style= "padding:8px; "><?php echo  $r['name']  ?> </td>
+        <td style="padding:8px; text-align: center;"><?php echo  $r['point_value']  ?> </td>
+<!--        <td>--><?php //echo  $r['is_badge']  ?><!-- </td>-->
+        <?php endforeach; ?>
 
 
 
     </tr>
-    <?php endforeach; ?>
 
     <?php ChromePhp::log($user); ?>
     <?php ChromePhp::log($rep); ?>
     <?php ChromePhp::log($myrep); ?>
 
 </table>
+        </div>
+    </div>
+
 
 
 

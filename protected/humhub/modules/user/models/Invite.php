@@ -125,6 +125,8 @@ class Invite extends \yii\db\ActiveRecord
             if (Yii::$app->user->language !== "") {
                 Yii::$app->language = Yii::$app->user->language;
             }
+
+
         }
     }
 

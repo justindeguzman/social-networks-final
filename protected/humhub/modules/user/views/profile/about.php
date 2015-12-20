@@ -9,7 +9,7 @@ include 'ChromePhp.php';
     <div
         class="panel-heading"><?php echo Yii::t('UserModule.views_profile_about', '<strong>About</strong> this user'); ?></div>
 
-    <div class="paznel-body">
+    <div class="panel-body">
 
         <?php $firstClass = "active";
 
