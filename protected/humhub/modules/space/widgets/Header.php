@@ -19,6 +19,7 @@ class Header extends Widget
 
     public $space;
 
+
     public function run()
     {
         $postCount = Content::find()->where(['object_model' => Post::className(), 'space_id' => $this->space->id])->count();

@@ -10,8 +10,7 @@ use yii\helpers\Html;
         <?php $firstClass = "active"; ?>
 
 
-        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-            <?php foreach ($user->profile->getProfileFieldCategories() as $category): ?>
+∏            <?php foreach ($user->profile->getProfileFieldCategories() as $category): ?>
                 <li class="<?php echo $firstClass;
                 $firstClass = ""; ?>"><a href="#profile-category-<?php echo $category->id; ?>"
                                          data-toggle="tab"><?php echo Html::encode(Yii::t($category->getTranslationCategory(), $category->title)); ?></a>
@@ -21,6 +20,8 @@ use yii\helpers\Html;
         <?php $firstClass = "active"; ?>
 
         <table class="table table-bordered">
+            <?php Console.log( $user->profile->getUser()->getId()) ?>
+
             <?php echo $user->profile->getUser()->getId() ?>
 
 </table>

@@ -56,6 +56,9 @@ class Profile extends \yii\db\ActiveRecord
     public function rules()
     {
         $rules = [
+
+
+
             [['user_id'], 'required'],
             [['user_id'], 'integer'],
         ];
