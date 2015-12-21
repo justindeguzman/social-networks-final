@@ -11084,3 +11084,2006 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1450568217.358
     'REQUEST_TIME' => 1450568217
 ]
+2015-12-19 19:53:25 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function humhub\libs\imagecreatefrompng()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/libs/ImageConverter.php:288
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 19:53:25 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerfiles' => [
+        'name' => [
+            0 => 'user-512.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/phpJ4xpmH'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 6076
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '6270'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'OVF4VjdiOFpTOQsFBCNgHl8HETIPO3k4VisqMGcQcB5xNi0xXxpvIg=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary7RGb3RsZXnQIp63A'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58704'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450572805.097
+    'REQUEST_TIME' => 1450572805
+    'argv' => [
+        0 => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    ]
+    'argc' => 1
+]
+2015-12-19 19:54:26 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function humhub\libs\imagecreatefrompng()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/libs/ImageConverter.php:288
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 19:54:25 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerfiles' => [
+        'name' => [
+            0 => 'Skydive Black.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/phprBsdPO'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 429773
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '429972'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'UW5UbjUybTc7Bic9BnM1czc4PQoNayxVPhQGCGVAJXMZCQEJXUo6Tw=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryJpgYi2D6dcA2ZWFu'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58721'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450572865.915
+    'REQUEST_TIME' => 1450572865
+    'argv' => [
+        0 => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    ]
+    'argc' => 1
+]
+2015-12-19 19:57:02 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function humhub\libs\imagecreatefrompng()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/libs/ImageConverter.php:288
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 19:57:02 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerfiles' => [
+        'name' => [
+            0 => 'Skydive Black.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/phpikxYTB'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 429773
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '429972'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'T0NIRWJlVEElKzsWUSQMBSkVISFaPBUjIDkaIzIXHAUHJB0iCh0DOQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryCmoJGwzZDWovhxMO'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58783'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573022.775
+    'REQUEST_TIME' => 1450573022
+    'argv' => [
+        0 => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    ]
+    'argc' => 1
+]
+2015-12-19 20:00:27 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_exif.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_exif.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:00:26 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'notification/list/get-update-json'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'T0NIRWJlVEElKzsWUSQMBSkVISFaPBUjIDkaIzIXHAUHJB0iCh0DOQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58882'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=notification%2Flist%2Fget-update-json'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=notification%2Flist%2Fget-update-json'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573226.906
+    'REQUEST_TIME' => 1450573226
+]
+2015-12-19 20:00:38 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function humhub\libs\imagecreatefrompng()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/libs/ImageConverter.php:288
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:00:38 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerfiles' => [
+        'name' => [
+            0 => 'Skydive Black.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/phpyp6Sl1'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 429773
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '429972'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'R3VGVlU5emgtHTUFZngiLCEjLzJtYDsKKA8UMAVLMiwPEhMxPUEtEA=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryFSRxhUEmqbKtMns6'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58891'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573238.473
+    'REQUEST_TIME' => 1450573238
+]
+2015-12-19 20:00:46 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_exif.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_exif.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:00:46 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'notification/list/get-update-json'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'R3VGVlU5emgtHTUFZngiLCEjLzJtYDsKKA8UMAVLMiwPEhMxPUEtEA=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58893'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=notification%2Flist%2Fget-update-json'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=notification%2Flist%2Fget-update-json'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573246.168
+    'REQUEST_TIME' => 1450573246
+]
+2015-12-19 20:01:07 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_exif.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_exif.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:01:06 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'space/admin/edit'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58914'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573266.637
+    'REQUEST_TIME' => 1450573266
+]
+2015-12-19 20:01:16 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_exif.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_exif.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:01:16 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'space/admin/edit'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58921'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573276.844
+    'REQUEST_TIME' => 1450573276
+]
+2015-12-19 20:01:29 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_exif.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_exif.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:01:29 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58928'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/social-networks-final/index.php'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573289.787
+    'REQUEST_TIME' => 1450573289
+]
+2015-12-19 20:01:30 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_exif.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_exif.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:01:30 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'limit' => '4'
+    'filters' => ''
+    'sort' => 'c'
+    'from' => ''
+    'mode' => 'normal'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'c0o0Nlc3LmoZIkdlZHZ2LhUcXVJvbm8IHDBmUAdFZi47LWFRP095Eg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58933'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&limit=4&filters=&sort=c&from=&mode=normal'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=dashboard%2Fdashboard%2Fstream&limit=4&filters=&sort=c&from=&mode=normal'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573290.535
+    'REQUEST_TIME' => 1450573290
+]
+2015-12-19 20:01:45 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:01:45 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'notification/list/get-update-json'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'c0o0Nlc3LmoZIkdlZHZ2LhUcXVJvbm8IHDBmUAdFZi47LWFRP095Eg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58937'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=notification%2Flist%2Fget-update-json'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=notification%2Flist%2Fget-update-json'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573305.516
+    'REQUEST_TIME' => 1450573305
+]
+2015-12-19 20:01:49 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:01:49 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'limit' => '4'
+    'filters' => ''
+    'sort' => 'c'
+    'from' => ''
+    'mode' => 'normal'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'QVctNER1NFIrP15ndzRsFicBRFB8LHUwLi1/UhQHfBYJMHhTLA1jKg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58943'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&limit=4&filters=&sort=c&from=&mode=normal'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=dashboard%2Fdashboard%2Fstream&limit=4&filters=&sort=c&from=&mode=normal'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573309.758
+    'REQUEST_TIME' => 1450573309
+]
+2015-12-19 20:01:50 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:01:49 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'limit' => '10'
+    'from' => ''
+    'mode' => 'activity'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'QVctNER1NFIrP15ndzRsFicBRFB8LHUwLi1/UhQHfBYJMHhTLA1jKg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58944'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&limit=10&from=&mode=activity'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=dashboard%2Fdashboard%2Fstream&limit=10&from=&mode=activity'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573309.752
+    'REQUEST_TIME' => 1450573309
+]
+2015-12-19 20:01:52 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:01:52 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'space/admin/edit'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58942'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fedit&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573312.468
+    'REQUEST_TIME' => 1450573312
+]
+2015-12-19 20:01:57 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:01:57 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'space/space/stream'
+    'limit' => '10'
+    'from' => ''
+    'mode' => 'activity'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'WFNRUDdDNi4yOyIDBAJuaj4FODQPGndMNykDNmcxfmoQNAQ3XzthVg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fspace&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58953'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=space%2Fspace%2Fstream&limit=10&from=&mode=activity&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fspace%2Fstream&limit=10&from=&mode=activity&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573317.608
+    'REQUEST_TIME' => 1450573317
+]
+2015-12-19 20:01:57 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:01:57 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'space/space/stream'
+    1 => '/space/space/stream'
+    'limit' => '4'
+    'filters' => ''
+    'sort' => 'c'
+    'from' => ''
+    'mode' => 'normal'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'WFNRUDdDNi4yOyIDBAJuaj4FODQPGndMNykDNmcxfmoQNAQ3XzthVg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fspace&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58950'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=space%2Fspace%2Fstream&1=%2Fspace%2Fspace%2Fstream&limit=4&filters=&sort=c&from=&mode=normal&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fspace%2Fstream&1=%2Fspace%2Fspace%2Fstream&limit=4&filters=&sort=c&from=&mode=normal&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573317.614
+    'REQUEST_TIME' => 1450573317
+]
+2015-12-19 20:02:02 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function humhub\libs\imagecreatefrompng()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/libs/ImageConverter.php:288
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:02:02 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerfiles' => [
+        'name' => [
+            0 => 'Skydive Black.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/phpSWnrnM'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 429773
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '429972'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'WFNRUDdDNi4yOyIDBAJuaj4FODQPGndMNykDNmcxfmoQNAQ3XzthVg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarytYgXJKU1LomjNCgi'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fspace&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58948'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573322.068
+    'REQUEST_TIME' => 1450573322
+]
+2015-12-19 20:02:26 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function humhub\libs\imagecreatefrompng()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/libs/ImageConverter.php:288
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:02:26 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerfiles' => [
+        'name' => [
+            0 => 'Skydive Black.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/phpSb1l4Z'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 429773
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '429972'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'WTN4bVhKRVEzWws.awsdFT9lEQlgEwQzNkkqCwg4DRURVC0KMDISKQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryaRdPFmHc1vqBtP3S'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fspace&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58970'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573346.284
+    'REQUEST_TIME' => 1450573346
+]
+2015-12-19 20:02:28 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/php_gd2.dll, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-19 20:02:28 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'notification/list/get-update-json'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'WTN4bVhKRVEzWws.awsdFT9lEQlgEwQzNkkqCwg4DRURVC0KMDISKQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fspace&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.14'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '58972'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=notification%2Flist%2Fget-update-json'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=notification%2Flist%2Fget-update-json'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450573348.446
+    'REQUEST_TIME' => 1450573348
+]
+2015-12-19 20:26:37 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/content/components/ContentContainerActiveRecord.php:39
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/BaseYii.php(40): ::spl_autoload_call()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/BaseYii.php(288): ::unknown()
+#2 /Library/WebServer/Documents/social-networks-final/protected/humhub/components/bootstrap/ModuleAutoLoader.php(0): yii\BaseYii::autoload()
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/components/bootstrap/ModuleAutoLoader.php(15): ::spl_autoload_call()
+#4 /Library/WebServer/Documents/social-networks-final/protected/humhub/components/bootstrap/ModuleAutoLoader.php(40): ::unknown()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(315): humhub\components\bootstrap\ModuleAutoLoader->bootstrap()
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(63): yii\base\Application->bootstrap()
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(267): yii\web\Application->bootstrap()
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(206): yii\base\Object->__construct()
+#10 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->__construct()
+#11 {main}
+2015-12-19 20:26:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'notification/list/get-update-json'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'MHouVUdseGZaEl0GdC0gIlYsRzF/NTkEXwB8MxceMCJ4HXsyLxQvHg=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fspace&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '59676'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=notification%2Flist%2Fget-update-json'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=notification%2Flist%2Fget-update-json'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450574797.022
+    'REQUEST_TIME' => 1450574797
+]
+2015-12-19 20:26:57 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/content/components/ContentContainerActiveRecord.php:39
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/BaseYii.php(40): ::spl_autoload_call()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/BaseYii.php(288): ::unknown()
+#2 /Library/WebServer/Documents/social-networks-final/protected/humhub/components/bootstrap/ModuleAutoLoader.php(0): yii\BaseYii::autoload()
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/components/bootstrap/ModuleAutoLoader.php(15): ::spl_autoload_call()
+#4 /Library/WebServer/Documents/social-networks-final/protected/humhub/components/bootstrap/ModuleAutoLoader.php(40): ::unknown()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(315): humhub\components\bootstrap\ModuleAutoLoader->bootstrap()
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(63): yii\base\Application->bootstrap()
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(267): yii\web\Application->bootstrap()
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(206): yii\base\Object->__construct()
+#10 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->__construct()
+#11 {main}
+2015-12-19 20:26:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'space/space'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fspace&sguid=c3cef279-00c2-48f5-a033-97574d166a18'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '59682'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=space%2Fspace&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fspace&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450574817.224
+    'REQUEST_TIME' => 1450574817
+]
+2015-12-19 20:27:10 [::1][4][021320b35c7ec617f0d4e006deca80e6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getUrl() on a non-object' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/widgets/views/spaceChooser.php:17
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(191): yii\base\View->render()
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/widgets/Chooser.php(32): yii\base\Widget->render()
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Widget.php(98): humhub\modules\space\widgets\Chooser->run()
+#5 /Library/WebServer/Documents/social-networks-final/protected/humhub/views/layouts/main.php(100): yii\base\Widget::widget()
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile()
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent()
+#10 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/SpaceController.php(55): yii\base\Controller->render()
+#11 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\space\controllers\SpaceController->actionIndex()
+#12 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#13 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#14 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#15 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#16 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#17 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#18 {main}
+2015-12-19 20:27:10 [::1][4][021320b35c7ec617f0d4e006deca80e6][info][application] $_GET = [
+    'r' => 'space/space'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_COOKIE = [
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'mp_a500de3f6ed213ed545268e0e926d929_mixpanel' => '{\"distinct_id\": \"14f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"}'
+    '_csrf' => '75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jhsS3AXDfVid8YAbozRfPrHDHgUghxWx\";}'
+    'PHPSESSID' => '021320b35c7ec617f0d4e006deca80e6'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'ws' => -1
+    ]
+    '__returnUrl' => '/social-networks-final/'
+    '__id' => 4
+    'ws' => 'created'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/social-networks-final/index.php?r=space%2Fspace&sguid=c3cef279-00c2-48f5-a033-97574d166a18'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_space-members-panel=expanded; mp_a500de3f6ed213ed545268e0e926d929_mixpanel=%7B%22distinct_id%22%3A%20%2214f6c5b788951-090f34bab-34627906-13c680-14f6c5b788a354%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _csrf=75bbbe204891a61e8687cd72026620013338ad734f50f3624a0417263eae4b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jhsS3AXDfVid8YAbozRfPrHDHgUghxWx%22%3B%7D; PHPSESSID=021320b35c7ec617f0d4e006deca80e6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '59684'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=space%2Fspace&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fspace&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450574830.366
+    'REQUEST_TIME' => 1450574830
+]
+2015-12-19 21:01:37 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'humhub\modules\space\controllers\CHttpException' not found' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/AdminController.php:431
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(149): humhub\modules\space\controllers\AdminController->beforeAction()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#4 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#5 {main}
+2015-12-19 21:01:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerFiles' => [
+        'name' => [
+            0 => 'HELLO!!!!!.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/phprQUdSB'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 31562
+        ]
+    ]
+]
+
+$_SERVER = [
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------666517779689698641146969'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'application/json'
+    'CONTENT_LENGTH' => '31782'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '60549'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450576896.657
+    'REQUEST_TIME' => 1450576896
+]
+2015-12-19 21:02:21 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'humhub\modules\space\controllers\CHttpException' not found' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/AdminController.php:431
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(149): humhub\modules\space\controllers\AdminController->beforeAction()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#4 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#5 {main}
+2015-12-19 21:02:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerFiles' => [
+        'name' => [
+            0 => 'HELLO!!!!!.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/phpRFKlNW'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 31562
+        ]
+    ]
+]
+
+$_SERVER = [
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------784910751305690578318917'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'application/json'
+    'CONTENT_LENGTH' => '31782'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '60589'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450576941.518
+    'REQUEST_TIME' => 1450576941
+]
+2015-12-19 21:03:28 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'humhub\modules\space\controllers\CHttpException' not found' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/AdminController.php:431
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(149): humhub\modules\space\controllers\AdminController->beforeAction()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#4 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#5 {main}
+2015-12-19 21:03:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerFiles' => [
+        'name' => [
+            0 => 'HELLO!!!!!.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/phpBl9qRR'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 31562
+        ]
+    ]
+]
+
+$_SERVER = [
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------939400112482105492650408'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'application/json'
+    'CONTENT_LENGTH' => '31782'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '60601'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450577008.039
+    'REQUEST_TIME' => 1450577008
+]
+2015-12-19 21:03:42 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'humhub\modules\space\controllers\CHttpException' not found' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/AdminController.php:431
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(149): humhub\modules\space\controllers\AdminController->beforeAction()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#4 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#5 {main}
+2015-12-19 21:03:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerFiles' => [
+        'name' => [
+            0 => 'HELLO!!!!!.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/phpVaRzki'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 31562
+        ]
+    ]
+]
+
+$_SERVER = [
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------633750648862418374718868'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'application/json'
+    'CONTENT_LENGTH' => '31782'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '60611'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450577021.846
+    'REQUEST_TIME' => 1450577021
+]
+2015-12-19 21:03:52 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'humhub\modules\space\controllers\CHttpException' not found' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/AdminController.php:431
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(149): humhub\modules\space\controllers\AdminController->beforeAction()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#4 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#5 {main}
+2015-12-19 21:03:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerFiles' => [
+        'name' => [
+            0 => 'HELLO!!!!!.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/phpNCqCsD'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 31562
+        ]
+    ]
+]
+
+$_SERVER = [
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------395370542922466564717387'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'application/json'
+    'CONTENT_LENGTH' => '31782'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '60617'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450577032.732
+    'REQUEST_TIME' => 1450577032
+]
+2015-12-19 21:05:34 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'humhub\modules\space\controllers\CHttpException' not found' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/AdminController.php:431
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(149): humhub\modules\space\controllers\AdminController->beforeAction()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#4 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#5 {main}
+2015-12-19 21:05:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerFiles' => [
+        'name' => [
+            0 => 'HELLO!!!!!.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/php5643hz'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 31562
+        ]
+    ]
+]
+
+$_SERVER = [
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------398616524577410859937326'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'application/json'
+    'CONTENT_LENGTH' => '31782'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '60654'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450577134.628
+    'REQUEST_TIME' => 1450577134
+]
+2015-12-19 21:14:46 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'humhub\modules\space\controllers\CHttpException' not found' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/AdminController.php:431
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(149): humhub\modules\space\controllers\AdminController->beforeAction()
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#4 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#5 {main}
+2015-12-19 21:14:45 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'space/admin/banner-image-upload'
+    'sguid' => '79bba48e-5f14-4691-bde2-e23c1939c2ef'
+]
+
+$_FILES = [
+    'bannerFiles' => [
+        'name' => [
+            0 => 'HELLO!!!!!.png'
+        ]
+        'type' => [
+            0 => 'image/png'
+        ]
+        'tmp_name' => [
+            0 => '/private/var/tmp/php8TgtVk'
+        ]
+        'error' => [
+            0 => 0
+        ]
+        'size' => [
+            0 => 31562
+        ]
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------132830225943071778683724'
+    'CONTENT_LENGTH' => '31782'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'REMOTE_PORT' => '60859'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'REQUEST_URI' => '/social-networks-final/index.php?r=space%2Fadmin%2Fbanner-image-upload&sguid=79bba48e-5f14-4691-bde2-e23c1939c2ef'
+    'SCRIPT_NAME' => '/social-networks-final/index.php'
+    'PHP_SELF' => '/social-networks-final/index.php'
+    'REQUEST_TIME_FLOAT' => 1450577685.779
+    'REQUEST_TIME' => 1450577685
+]
