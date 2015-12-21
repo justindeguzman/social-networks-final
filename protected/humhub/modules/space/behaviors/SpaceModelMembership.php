@@ -217,6 +217,8 @@ class SpaceModelMembership extends Behavior
             $userInvite->space_invite_id = $this->owner->id;
             $userInvite->save();
             $userInvite->sendInviteMail();
+
+
         }
         return true;
     }
@@ -324,7 +326,9 @@ class SpaceModelMembership extends Behavior
      *
      * This can happens after an clicking "Request Membership" Link
      * after Approval or accepting an invite.
+     * Reputation id is 1 for joining
      *
+     * Reputation is 5 for those who invited them
      * @param type $userId
      */
     public function addMember($userId)
@@ -334,6 +338,8 @@ class SpaceModelMembership extends Behavior
 
         if ($membership == null) {
             // Add Membership
+            $reputation_id = 1;
+
             $membership = new Membership;
             $membership->space_id = $this->owner->id;
             $membership->user_id = $userId;
@@ -342,12 +348,17 @@ class SpaceModelMembership extends Behavior
             $membership->admin_role = 0;
             $membership->share_role = 0;
 
+
+
             $userInvite = Invite::findOne(['email' => $user->email]);
             if ($userInvite !== null && $userInvite->source == Invite::SOURCE_INVITE) {
+                $reputation_id = 5;
                 $notification = new \humhub\modules\space\notifications\InviteAccepted();
                 $notification->originator = $user;
                 $notification->source = $this->owner;
                 $notification->send(User::findOne(['id' => $userInvite->user_originator_id]));
+                ReputationHistory::addReputation($membership->originator_user_id,$reputation_id);
+
             }
         } else {
 
@@ -376,6 +387,7 @@ class SpaceModelMembership extends Behavior
             $membership->status = Membership::STATUS_MEMBER;
         }
         $membership->save();
+        ReputationHistory::addReputation($userId,$reputation_id);
 
         $activity = new \humhub\modules\space\activities\MemberAdded;
         $activity->source = $this->owner;

@@ -8,6 +8,7 @@
 
 namespace humhub\modules\space\controllers;
 
+use humhub\modules\user\models\ReputationHistory;
 use Yii;
 use yii\helpers\Url;
 use yii\web\HttpException;
@@ -155,9 +156,13 @@ class MembershipController extends \humhub\modules\content\components\ContentCon
 
     /**
      * Invite New Members to this workspace
+     * Reputation number 5
      */
     public function actionInvite()
     {
+
+        $reputation_number=5;
+
         $space = $this->getSpace();
 
         // Check Permissions to Invite
@@ -176,12 +181,22 @@ class MembershipController extends \humhub\modules\content\components\ContentCon
             foreach ($model->getInvites() as $user) {
                 $space->inviteMember($user->id, Yii::$app->user->id);
                 $statusInvite = $space->getMembership($user->id)->status;
+                if($statusInvite == Membership::STATUS_INVITED){
+                    ReputationHistory::addReputation( Yii::$app->user->getId(), $reputation_number);
+
+                }
             }
+
 
             // Invite non existing members
             if (Setting::Get('internalUsersCanInvite', 'authentication_internal')) {
                 foreach ($model->getInvitesExternal() as $email) {
+                    /** @var TYPE_NAME $statusInvite */
                     $statusInvite = ($space->inviteMemberByEMail($email, Yii::$app->user->id)) ? Membership::STATUS_INVITED : false;
+                    if($statusInvite==Membership::STATUS_INVITED){
+                        ReputationHistory::addReputation( Yii::$app->user->getId(), $reputation_number);
+
+                    }
                 }
             }
 
@@ -194,9 +209,13 @@ class MembershipController extends \humhub\modules\content\components\ContentCon
     /**
      * When a user clicks on the Accept Invite Link, this action is called.
      * After this the user should be member of this workspace.
-     */
+     * Reputation id is 6 for inviter
+     *
+     *
+    */
     public function actionInviteAccept()
     {
+        $reputation_id = 6;
 
         $this->forcePostRequest();
         $space = $this->getSpace();
@@ -210,6 +229,8 @@ class MembershipController extends \humhub\modules\content\components\ContentCon
         // Check there are really an Invite
         if ($membership->status == Membership::STATUS_INVITED) {
             $space->addMember(Yii::$app->user->id);
+            ReputationHistory::addReputation($membership->originator_user_id,$reputation_id);
+
         }
 
         return $this->redirect($space->getUrl());

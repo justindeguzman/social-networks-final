@@ -272,9 +272,25 @@ class ReputationHistory extends \yii\db\ActiveRecord
 
         return $s;
     }
+    public  static function addReputation( $user_id,$rep_id){
+
+        $query = Yii::$app->db->createCommand();
+
+        $query->setSql("insert into reputation_history(user_id,rep_id) VALUES ($user_id,$rep_id)")->execute();
+
+
+
+
+    }
+
+
+
+
 
 
 }
+
+
 
 
 //

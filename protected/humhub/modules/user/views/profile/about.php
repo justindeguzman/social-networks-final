@@ -24,7 +24,7 @@ include 'ChromePhp.php';
                 ?>"><a href="#profile-category-<?php echo $category->id; ?>"
                                          data-toggle="tab"><?php echo Html::encode(Yii::t($category->getTranslationCategory(), $category->title)); ?></a>
                 </li>
-            <?php             ChromePhp::log($user->profile);
+            <?php
              endforeach; ?>
         </ul>
 

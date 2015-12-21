@@ -48435,3 +48435,1218 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1450648591.8255
     'REQUEST_TIME' => 1450648591
 ]
+2015-12-20 17:21:05 [::1][2][rotj89mjegms7sv6m414ps6vh2][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: category' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/user/views/profile/reputation.php:95
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('???', '???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/user/controllers/ProfileController.php(83): yii\base\Controller->render('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\user\controllers\ProfileController->actionReputation()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#10 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#11 {main}
+2015-12-20 17:21:05 [::1][2][rotj89mjegms7sv6m414ps6vh2][info][application] $_GET = [
+    'r' => 'user/profile/reputation'
+    'uguid' => 'fcae9020-d98d-4f17-8624-16d7b06413d8'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'PHPSESSID' => 'rotj89mjegms7sv6m414ps6vh2'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    '_identity' => '91abc0d8817a0837a91d250175c6cd8c5eb54db30c815dd9103168d792da8a7da:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[2,\"fcae9020-d98d-4f17-8624-16d7b06413d8\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51294'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=user%2Fprofile%2Freputation&uguid=fcae9020-d98d-4f17-8624-16d7b06413d8'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=user%2Fprofile%2Freputation&uguid=fcae9020-d98d-4f17-8624-16d7b06413d8'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=user%2Fprofile&uguid=fcae9020-d98d-4f17-8624-16d7b06413d8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; PHPSESSID=rotj89mjegms7sv6m414ps6vh2; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; _identity=91abc0d8817a0837a91d250175c6cd8c5eb54db30c815dd9103168d792da8a7da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B2%2C%22fcae9020-d98d-4f17-8624-16d7b06413d8%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450650065.4662
+    'REQUEST_TIME' => 1450650065
+]
+2015-12-20 22:31:29 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: user' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php:189
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#5 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#6 {main}
+2015-12-20 22:30:53 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => 'c3cef279-00c2-48f5-a033-97574d166a18'
+]
+
+$_POST = [
+    '_csrf' => 'N21LSUNkVXNOCxINGwJiAHUrJgw1IQ9eeB0yOihQYjtdNyQhIgMPHQ=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'gf@fds.com'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '13123'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49186'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=c3cef279-00c2-48f5-a033-97574d166a18'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=c3cef279-00c2-48f5-a033-97574d166a18'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '134'
+    'HTTP_CONTENT_LENGTH' => '134'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'TW1YWVZpQVk0CwEdDg92Kg8rNRwgLBt0Ah0hKj1ddhEnNzcxNw4bNw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=c3cef279-00c2-48f5-a033-97574d166a18'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=13123; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450668653.2706
+    'REQUEST_TIME' => 1450668653
+]
+2015-12-20 22:32:19 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: user' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php:189
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#5 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#6 {main}
+2015-12-20 22:32:14 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => 'c3cef279-00c2-48f5-a033-97574d166a18'
+]
+
+$_POST = [
+    '_csrf' => 'cDdtczYtdmcJUTQ3bktBFDJxADZAaCxKP0cUAF0ZQS8abQIbV0osCQ=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'fd@fm.com'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '13123'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49400'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=c3cef279-00c2-48f5-a033-97574d166a18'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=c3cef279-00c2-48f5-a033-97574d166a18'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '133'
+    'HTTP_CONTENT_LENGTH' => '133'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'RXgyUEphZjQ8HmsUEgdRRwc.XxU8JDwZCghLIyFVUXwvIl04KwY8Wg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=c3cef279-00c2-48f5-a033-97574d166a18'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=13123; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450668734.7314
+    'REQUEST_TIME' => 1450668734
+]
+2015-12-20 22:35:18 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: user' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php:189
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#5 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#6 {main}
+2015-12-20 22:33:05 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => '66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+]
+
+$_POST = [
+    '_csrf' => 'cm9fQkdFRDALCQYGHyNzQzApMgcxAB4dPR8mMSxxc3gYNTAqJiIeXg=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'j@m.com'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '16216'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49696'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '131'
+    'HTTP_CONTENT_LENGTH' => '131'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'TS5XMklJdFA0SA52ES9DIw9oOnc/DC59Al4uQSJ9QxgndDhaKC4uPg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=16216; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450668785.8573
+    'REQUEST_TIME' => 1450668785
+]
+2015-12-20 22:36:24 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: user' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php:189
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#5 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#6 {main}
+2015-12-20 22:35:35 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => '66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+]
+
+$_POST = [
+    '_csrf' => 'STE0SlNXWVcwV20OCzFuJAt3WQ8lEgN6BkFNOThjbh8ja1siMjADOQ=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'f@f.com
+'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '16216'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49929'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '137'
+    'HTTP_CONTENT_LENGTH' => '137'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'REthSzh4TGg9LTgPYB57GwYNDA5OPRZFCzsYOFNMeyAuEQ4jWR8WBg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=16216; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450668935.6196
+    'REQUEST_TIME' => 1450668935
+]
+2015-12-20 22:40:39 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: user' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php:189
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#5 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#6 {main}
+2015-12-20 22:36:43 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => 'c3cef279-00c2-48f5-a033-97574d166a18'
+]
+
+$_POST = [
+    '_csrf' => 'UWxtLWouNWooCjRpMkgCGRMqAGgca29HHhwUXgEaAiI7NgJFC0lvBA=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'f@f.com'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '17863'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50208'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=c3cef279-00c2-48f5-a033-97574d166a18'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=c3cef279-00c2-48f5-a033-97574d166a18'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '131'
+    'HTTP_CONTENT_LENGTH' => '131'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'Q2lublpCOUE6DzcqAiQOMgEvAyssB2NsDBkXHTF2DgkpMwEGOyVjLw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=c3cef279-00c2-48f5-a033-97574d166a18'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=17863; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450669003.178
+    'REQUEST_TIME' => 1450669003
+]
+2015-12-20 22:46:15 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Uncaught exception 'yii\base\ErrorException' with message 'Undefined property: yii\base\UnknownPropertyException::$*Exception*trace' in /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/ErrorHandler.php:89
+Stack trace:
+#0 {main}
+  thrown' in /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/ErrorHandler.php:89
+Stack trace:
+#0 {main}
+2015-12-20 22:41:05 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => '66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+]
+
+$_POST = [
+    '_csrf' => 'X3RwRFAwSW4mEikACFZ.HR0yHQEmdRNDEAQJNzsEfiY1Lh8sMVcTAA=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'e@d.com
+'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '11398'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50797'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '137'
+    'HTTP_CONTENT_LENGTH' => '137'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'Vkw2TlJzTE0vKm8KChV7PhQKWwskNhZgGTxPPTlHewU8FlkmMxQWIw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=11398; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450669265.5961
+    'REQUEST_TIME' => 1450669265
+]
+2015-12-20 22:48:50 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function HistupdateDb()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/views/membership/statusInvite.php:14
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(210): yii\base\View->renderFile('???', '???', '???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Controller.php(47): yii\web\View->renderAjax('???', '???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php(195): yii\web\Controller->renderAjax('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\space\controllers\MembershipController->actionInvite()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#10 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#11 {main}
+2015-12-20 22:47:16 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => '88bfd174-528c-4621-9ed9-46436390baba'
+]
+
+$_POST = [
+    '_csrf' => 'eXkxUVQyNDIAH2gVDFQDQTs/XBQid24fNglIIj8GA3oTI145NVVuXA=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'v@m.com
+'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '12424'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51638'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=88bfd174-528c-4621-9ed9-46436390baba'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=88bfd174-528c-4621-9ed9-46436390baba'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '139'
+    'HTTP_CONTENT_LENGTH' => '139'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'elJ2RWNCTy0DNC8BOyR4XjgUGwAVBxUANSIPNgh2eGUQCBktAiUVQw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=88bfd174-528c-4621-9ed9-46436390baba'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=12424; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450669636.4665
+    'REQUEST_TIME' => 1450669636
+]
+2015-12-20 22:49:35 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function HistupdateDb()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/views/membership/statusInvite.php:14
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(210): yii\base\View->renderFile('???', '???', '???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Controller.php(47): yii\web\View->renderAjax('???', '???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php(195): yii\web\Controller->renderAjax('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\space\controllers\MembershipController->actionInvite()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#10 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#11 {main}
+2015-12-20 22:49:20 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => '88bfd174-528c-4621-9ed9-46436390baba'
+]
+
+$_POST = [
+    '_csrf' => 'NHpRSVhYdzZNHAgNAD5ARXY8PAwuHS0bewooOjNsQH5eID4hOT8tWA=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'k@d.com
+'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '12424'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51887'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=88bfd174-528c-4621-9ed9-46436390baba'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=88bfd174-528c-4621-9ed9-46436390baba'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '137'
+    'HTTP_CONTENT_LENGTH' => '137'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'elJ2RWNCTy0DNC8BOyR4XjgUGwAVBxUANSIPNgh2eGUQCBktAiUVQw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=88bfd174-528c-4621-9ed9-46436390baba'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=12424; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450669760.5838
+    'REQUEST_TIME' => 1450669760
+]
+2015-12-20 22:52:10 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function HistupdateDb()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/views/membership/statusInvite.php:14
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(210): yii\base\View->renderFile('???', '???', '???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Controller.php(47): yii\web\View->renderAjax('???', '???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php(195): yii\web\Controller->renderAjax('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\space\controllers\MembershipController->actionInvite()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#10 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#11 {main}
+2015-12-20 22:50:05 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => '88bfd174-528c-4621-9ed9-46436390baba'
+]
+
+$_POST = [
+    '_csrf' => 'enJveVdLV2cDFDY9Dy1gFDg0AjwhDg1KNQIWCjx/YC8QKAARNiwNCQ=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'd@d.com'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '12424'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52003'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=88bfd174-528c-4621-9ed9-46436390baba'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=88bfd174-528c-4621-9ed9-46436390baba'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '133'
+    'HTTP_CONTENT_LENGTH' => '133'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'elJ2RWNCTy0DNC8BOyR4XjgUGwAVBxUANSIPNgh2eGUQCBktAiUVQw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=88bfd174-528c-4621-9ed9-46436390baba'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=12424; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450669805.6253
+    'REQUEST_TIME' => 1450669805
+]
+2015-12-20 22:56:45 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function HistupdateDb()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/views/membership/statusInvite.php:14
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(210): yii\base\View->renderFile('???', '???', '???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Controller.php(47): yii\web\View->renderAjax('???', '???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php(195): yii\web\Controller->renderAjax('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\space\controllers\MembershipController->actionInvite()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#10 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#11 {main}
+2015-12-20 22:53:06 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => '88bfd174-528c-4621-9ed9-46436390baba'
+]
+
+$_POST = [
+    '_csrf' => 'ZHYzUExxX04dEGoUFBdoPSYwXhU6NAVjKwZKIydFaAYOLFw4LRYFIA=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'f@c.com'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '12424'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52392'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=88bfd174-528c-4621-9ed9-46436390baba'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=88bfd174-528c-4621-9ed9-46436390baba'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '131'
+    'HTTP_CONTENT_LENGTH' => '131'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'elJ2RWNCTy0DNC8BOyR4XjgUGwAVBxUANSIPNgh2eGUQCBktAiUVQw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=88bfd174-528c-4621-9ed9-46436390baba'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=12424; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450669986.7193
+    'REQUEST_TIME' => 1450669986
+]
+2015-12-20 22:59:23 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function HistupdateDb()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/views/membership/statusInvite.php:14
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(210): yii\base\View->renderFile('???', '???', '???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Controller.php(47): yii\web\View->renderAjax('???', '???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php(195): yii\web\Controller->renderAjax('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\space\controllers\MembershipController->actionInvite()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#10 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#11 {main}
+2015-12-20 22:59:17 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => '66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+]
+
+$_POST = [
+    '_csrf' => 'OTQ1dkJCeXNAUmwyGiROAHtyWDM0ByNedkRMBSl2TjtTbloeIyUjHQ=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'f@c.com'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '16724'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53433'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '131'
+    'HTTP_CONTENT_LENGTH' => '131'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'ZEtMWEVwZWcdLRUcHRZSFCYNIR0zNT9KKzs1Ky5EUi8OESMwJBc/CQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=16724; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450670357.543
+    'REQUEST_TIME' => 1450670357
+]
+2015-12-20 23:00:39 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function HistupdateDb()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/views/membership/statusInvite.php:14
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(210): yii\base\View->renderFile('???', '???', '???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Controller.php(47): yii\web\View->renderAjax('???', '???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php(195): yii\web\Controller->renderAjax('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\space\controllers\MembershipController->actionInvite()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#10 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#11 {main}
+2015-12-20 23:00:36 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => '66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+]
+
+$_POST = [
+    '_csrf' => 'WmN2TU96Mk0jBS8JFxwFPhglGwg5P2hgFRMPPiROBQUwORklLh1oIw=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 's@m.com'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '13467'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53999'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '131'
+    'HTTP_CONTENT_LENGTH' => '131'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'UDk4cElISG4pX2E0ES5/HRJ/VTU/DRJDH0lBAyJ8fyY6Y1cYKC8SAA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=13467; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450670436.3957
+    'REQUEST_TIME' => 1450670436
+]
+2015-12-20 23:04:00 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function HistupdateDb()' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/views/membership/statusInvite.php:14
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(210): yii\base\View->renderFile('???', '???', '???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Controller.php(47): yii\web\View->renderAjax('???', '???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php(196): yii\web\Controller->renderAjax('???', '???')
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\space\controllers\MembershipController->actionInvite()
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#9 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#10 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#11 {main}
+2015-12-20 23:04:00 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => '66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+]
+
+$_POST = [
+    '_csrf' => 'S1BHNW9jT1QyNh5xNwV4JwkWKnAZJhV5BCA.RgRXeBwhCihdDgQVOg=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'fd@mc.com'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '13467'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54362'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '133'
+    'HTTP_CONTENT_LENGTH' => '133'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'RWJuZWtNbjg8BDchMytZSwckAyAdCDQVChIXFgB5WXAvOAENCio0Vg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=13467; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450670640.5689
+    'REQUEST_TIME' => 1450670640
+]
+2015-12-20 23:07:20 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '?>'' in /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/views/membership/statusInvite.php:12
+Stack trace:
+#0 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/View.php(210): yii\base\View->renderFile('???', '???', '???')
+#1 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Controller.php(47): yii\web\View->renderAjax('???', '???', '???')
+#2 /Library/WebServer/Documents/social-networks-final/protected/humhub/modules/space/controllers/MembershipController.php(196): yii\web\Controller->renderAjax('???', '???')
+#3 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): humhub\modules\space\controllers\MembershipController->actionInvite()
+#4 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#5 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#6 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#7 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('???', '???')
+#8 /Library/WebServer/Documents/social-networks-final/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#9 /Library/WebServer/Documents/social-networks-final/index.php(25): yii\base\Application->run()
+#10 {main}
+2015-12-20 23:07:20 [::1][1][ajsmn4loig8kdrent7o6m9s3h4][info][application] $_GET = [
+    'r' => 'space/membership/invite'
+    'sguid' => '66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+]
+
+$_POST = [
+    '_csrf' => 'T0JrYjlCbVc2JDImYSRaJA0EBidPBzd6ADISEVJ2Wh8lGAQKWCU3OQ=='
+    'InviteForm' => [
+        'invite' => ''
+        'inviteExternal' => 'd@m.com
+'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfYDXf7sBFmEvEZ-Opysk47HjZohagZn\";}'
+    'pm_getting-started-panel' => 'expanded'
+    'pm_new-people-panel' => 'expanded'
+    'pm_user-statistics-panel' => 'expanded'
+    'pm_user-spaces-panel' => 'expanded'
+    'pm_space-members-panel' => 'expanded'
+    'pm_new-spaces-panel' => 'expanded'
+    'SQLiteManager_currentLangue' => '2'
+    'language' => 'f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a:2:{i:0;s:8:\"language\";i:1;s:2:\"en\";}'
+    'PHPSESSID' => 'ajsmn4loig8kdrent7o6m9s3h4'
+    'XDEBUG_SESSION' => '13467'
+    '_identity' => '1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea:2:{i:0;s:9:\"_identity\";i:1;s:50:\"[1,\"b7f70c14-ba93-4f70-8924-fba6502a670e\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents/social-networks-final'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54806'
+    'SERVER_SOFTWARE' => 'PHP 5.6.15 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8081'
+    'REQUEST_URI' => '/index.php?r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/social-networks-final/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=space%2Fmembership%2Finvite&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '137'
+    'HTTP_CONTENT_LENGTH' => '137'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_X_CSRF_TOKEN' => 'bi1wS3lSVk4XSykPITRhPSxrHQ4PFwxjIV0JOBJmYQYEdx8jGDUMIA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8081/index.php?r=space%2Fspace&sguid=66bd9f1a-dfaa-4565-bb92-6eb0b8886556'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b8321e49b341e77b5b29897fb0d5b92d241e7e7e0e36afb817e12127479945cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfYDXf7sBFmEvEZ-Opysk47HjZohagZn%22%3B%7D; pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; pm_new-spaces-panel=expanded; SQLiteManager_currentLangue=2; language=f148239de7971ea85d421883f90addf3f50ca047a9b883fb65558364dc8393a1a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22en%22%3B%7D; PHPSESSID=ajsmn4loig8kdrent7o6m9s3h4; XDEBUG_SESSION=13467; _identity=1475264b3c4a1eac661d8b451a258afdf5125773aff7668c0f6b809ec0aae63ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22b7f70c14-ba93-4f70-8924-fba6502a670e%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FIREPHP' => '0.4.4'
+    'HTTP_X_FIREPHP_VERSION' => '0.4.4'
+    'HTTP_X_WF_MAX_COMBINED_SIZE' => '262144'
+    'REQUEST_TIME_FLOAT' => 1450670840.3871
+    'REQUEST_TIME' => 1450670840
+]

@@ -22,9 +22,9 @@ foreach( $myrep as $val):
 
 endforeach;
 ?>
-<div class="panel panel-default">
+<div class="panel panel-default" xmlns="http://www.w3.org/1999/html">
     <div
-        class="panel-heading"><?php echo Yii::t('UserModule.views_profile_reputation', '<strong>Reputation</strong> of this user'); ?></div>
+        class="panel-heading"><?php echo Yii::t('UserModule.views_profile_reputation', '<strong>Reputation & Priviledges</strong> of this user'); ?></div>
 
 
     <div class="panel-body">
@@ -35,17 +35,23 @@ endforeach;
         <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
                 <li class="<?php echo $firstClass;
                 $firstClass = "";
-                ?>"><a href="#profile-category-<?php echo $category->id; ?>"
-                       data-toggle="tab"><?php echo Html::encode(Yii::t($category->getTranslationCategory(), $category->title)); ?></a>
+                ?>"><a href="#profile-category-reputation"
+                       data-toggle="tab"><?php echo "Reputation and Badges"; ?></a>
                 </li>
-                <?php             ChromePhp::log($user->profile);
-            endforeach; ?>
+            <li class="<?php echo $firstClass;
+            $firstClass = "";
+            ?>"><a href="#profile-category-priviledges"
+                   data-toggle="tab"><?php echo "User Privledges"; ?></a>
+            </li>
         </ul>
+        <?php $firstClass = "active"; ?>
+        <div class="tab-content">
+            <div class="tab-pane <?php echo $firstClass;
+            $firstClass = ""; ?>" id="profile-category-reputation">
+        <div class="panel_heading">Total Reputations Points: <?php echo $sum[0]['sum(point_value)'] ?>
+        </br>
 
-        <div class="panel_heading">Total Reputations Points <?php echo $sum[0]['sum(point_value)'] ?>
-        </div>
-
-<div class="panel_heading">Reputations table</div>
+Reputations table</div>
 
 
 <table class="table table-bordered panel-body">
@@ -62,9 +68,6 @@ endforeach;
 
 
     <tr>
-
-
-
 
             <td style=" text-align: center;padding: 8px"><?php echo  $r['id']  ?> </td>
         <?php if( in_array($r['id'],$justMyRepIdVal) ){ ?>
@@ -84,14 +87,16 @@ endforeach;
 
     </tr>
 
-    <?php ChromePhp::log($user); ?>
-    <?php ChromePhp::log($rep); ?>
-    <?php ChromePhp::log($myrep); ?>
-
 </table>
+
+
         </div>
+            <div class="tab-pane <?php echo $firstClass;
+            $firstClass = ""; ?>" id="profile-category-reputation">
+
     </div>
 
+</div>
 
 
-
+</div>
